@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap");
+@import "./base/reset";
 @import "base/*.scss";
 @import "global/*.scss";
 @import "**/_*.scss";
 @import "../components/**/*.scss";
 @import "./header.scss";
 @import "./container.scss";
+@import "./ourExclusive.scss";
+@import "./aboutUs.scss";
+@import "./services.scss";
+@import "./chooses.scss";
+@import "./footer.scss";
 
 .body {
   font-family: "Exo", sans-serif;
@@ -28,4 +34,8 @@
 .sectionTitle {
   font-weight: 700;
   color: var(--title-color);
+}
+
+.sectionWithPadding {
+  padding: 40px 0px;
 }

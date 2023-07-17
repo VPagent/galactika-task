@@ -1,7 +1,7 @@
 .heroSection {
   padding-top: 12px;
   padding-bottom: 24px;
-  //   background-color: var(--header-bcg-color);
+  width: 100vw;
 }
 
 .heroContentWrapper {
@@ -9,19 +9,106 @@
   flex-direction: column;
 }
 
+.heroImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroTextWrapper {
+  margin-top: 40px;
+}
+
 .heroTitle {
   font-size: 28px;
+  text-align: start;
+}
+
+.borderBox {
+  position: relative;
+}
+
+.borderedSpan {
+  position: absolute;
+  z-index: 1;
+
+  // white-space: nowrap;
+}
+
+.border {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 3px;
+  border-radius: 20%;
+  background-color: red;
 }
 
 .heroText {
+  text-align: start;
+  margin-top: 24px;
   font-weight: 400px;
   font-size: 16px;
   color: var(--text-color);
 }
 
+.stringBox {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
 .string {
+  position: absolute;
+  left: 50%;
+
   display: flex;
   align-items: center;
+  width: max-content;
 
-  padding: 0px 40px;
+  padding: 20px 0px;
+}
+
+.string.light {
+  top: 0px;
+
+  background-color: var(--light-string-color);
+  transform: rotate(10deg) translateX(-50%);
+}
+
+.stringTextlight {
+  white-space: nowrap;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
+.string.purple {
+  top: -80px;
+
+  background-color: var(--purple-string-color);
+  transform: rotate(-10deg) translateX(-50%);
+}
+
+.stringTextpurple {
+  white-space: nowrap;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
+.specText {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
 }
