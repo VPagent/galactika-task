@@ -1,0 +1,27 @@
+.heroSection {
+  padding-top: 12px;
+  padding-bottom: 24px;
+  //   background-color: var(--header-bcg-color);
+}
+
+.heroContentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTitle {
+  font-size: 28px;
+}
+
+.heroText {
+  font-weight: 400px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.string {
+  display: flex;
+  align-items: center;
+
+  padding: 0px 40px;
+}

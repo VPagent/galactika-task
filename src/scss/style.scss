@@ -1,4 +1,31 @@
-@import 'base/*.scss';
-@import 'global/*.scss';
-@import '**/_*.scss';
-@import '../components/**/*.scss';
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap");
+@import "base/*.scss";
+@import "global/*.scss";
+@import "**/_*.scss";
+@import "../components/**/*.scss";
+@import "./header.scss";
+@import "./container.scss";
+
+.body {
+  font-family: "Exo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background: rgb(233, 242, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(233, 242, 242, 1) 0%,
+    rgba(215, 201, 222, 0.9178265056022409) 100%
+  );
+}
+
+.exoFont {
+  font-family: "Exo", sans-serif;
+}
+
+.openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  color: var(--title-color);
+}
