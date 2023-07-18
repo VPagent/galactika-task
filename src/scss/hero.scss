@@ -1,7 +1,13 @@
+@import "./base/reset";
+@import "./base/mixins";
+
 .heroSection {
   padding-top: 12px;
   padding-bottom: 24px;
-  width: 100vw;
+  width: 100vw !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroContentWrapper {
@@ -18,32 +24,12 @@
   margin-top: 40px;
 }
 
-.heroTitle {
+.sectionTitle.heroTitle {
   font-size: 28px;
   text-align: start;
-}
 
-.borderBox {
-  position: relative;
-}
-
-.borderedSpan {
-  position: absolute;
-  z-index: 1;
-
-  // white-space: nowrap;
-}
-
-.border {
-  position: absolute;
-  z-index: 0;
-  bottom: 0px;
-  left: 0px;
-
-  width: 100%;
-  height: 3px;
-  border-radius: 20%;
-  background-color: red;
+  margin: 0px;
+  padding: 0px;
 }
 
 .heroText {
@@ -58,24 +44,26 @@
   position: relative;
   display: flex;
   width: 100%;
+  overflow-x: hidden;
+  pointer-events: none;
+  height: 135px;
 }
 
 .string {
-  position: absolute;
-  left: 50%;
-
   display: flex;
   align-items: center;
-  width: max-content;
 
   padding: 20px 0px;
 }
 
 .string.light {
-  top: 0px;
+  position: relative;
+  height: max-content;
+  top: 32%;
+  left: -10px;
 
   background-color: var(--light-string-color);
-  transform: rotate(10deg) translateX(-50%);
+  transform: rotate(10deg);
 }
 
 .stringTextlight {
@@ -89,11 +77,23 @@
   color: white;
 }
 
+.stringTextlight.desktop {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
 .string.purple {
-  top: -80px;
+  position: absolute;
+  left: -10px;
+  top: 27%;
+  // top: -80px;
+  height: max-content;
 
   background-color: var(--purple-string-color);
-  transform: rotate(-10deg) translateX(-50%);
+  transform: rotate(-8deg);
 }
 
 .stringTextpurple {
@@ -106,6 +106,14 @@
   font-weight: 700;
   font-size: 16px;
   color: white;
+}
+
+.stringTextpurple.desktop {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
 }
 
 .specText {

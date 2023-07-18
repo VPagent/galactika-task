@@ -1,0 +1,30 @@
+.aboutUseContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutList {
+  margin-top: 40px;
+}
+
+.aboutListItem {
+  &:last-of-type {
+    margin-top: 24px;
+  }
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.itemText {
+  margin-top: 16px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}

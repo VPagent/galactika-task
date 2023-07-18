@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-				content="Gulp pack for easy html/php markup development">
-	<meta name="keywords"
-				content="">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.svg"
-				type="image/svg+xml">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.webp"
-				type="image/webp">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.png"
-				type="image/x-icon">
-	<link rel="stylesheet"
-				href="css/libs.min.css">
-	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>Easy-webdev-startpack v3.0</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gulp pack for easy html/php markup development" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp" />
+    <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="../../scss/base/_reset.scss" />
+    <title>Easy-webdev-startpack v3.0</title>
+  </head>
+</html>
 
 
 <body class="body">
@@ -49,10 +39,10 @@
       />
       <div class="heroTextWrapper">
         <h1 class="heroTitle exoFont sectionTitle">
-          Lorem ipsum dolor sit amet consectetur. Mi cras
+          Lorem ipsum dolor sit amet consectetur. Mi Cras
           <span class="borderBox">
-            <span class="borderedSpan">non non quis.</span>
-            <span class="border"></span>
+            <span class="borderedSpan">Non Non Quis.</span>
+            <div class="border"></div>
           </span>
         </h1>
         <p class="heroText openSans">
@@ -69,19 +59,19 @@
       <p class="stringTextlight">WE BUY TRAFFIC</p>
       <p class="stringTextlight specText">WE BUY TRAFFIC</p>
       <p class="stringTextlight">WE BUY TRAFFIC</p>
-      <p class="stringTextlight specText">WE BUY TRAFFIC</p>
-      <p class="stringTextlight">WE BUY TRAFFIC</p>
-      <p class="stringTextlight specText">WE BUY TRAFFIC</p>
-      <p class="stringTextlight">WE BUY TRAFFIC</p>
+      <p class="stringTextlight specText desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextlight desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextlight specText desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextlight desktop">WE BUY TRAFFIC</p>
     </div>
     <div class="string purple">
       <p class="stringTextpurple">WE BUY TRAFFIC</p>
       <p class="stringTextpurple specText">WE BUY TRAFFIC</p>
       <p class="stringTextpurple">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple specText">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple specText">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple">WE BUY TRAFFIC</p>
+      <p class="stringTextpurple specText desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextpurple desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextpurple specText desktop">WE BUY TRAFFIC</p>
+      <p class="stringTextpurple desktop">WE BUY TRAFFIC</p>
     </div>
   </div>
 </section>
@@ -89,7 +79,13 @@
 	<section class="sectionWithPadding">
   <div class="container">
     <div class="ourContentWrapper">
-      <h2 class="sectionTitle">Our exclusive partners</h2>
+      <h2 class="sectionTitle ourSectionTitle">
+        Our
+        <span class="borderBox">
+          <span class="borderedSpan">Exclusive Partners</span>
+          <span class="border"></span>
+        </span>
+      </h2>
       <ul class="ourList">
         <li class="ourListItem">
           <img src="../../img/png/1.png" alt="first" />
@@ -101,7 +97,7 @@
           <img src="../../img/png/3.png" alt="third" />
         </li>
       </ul>
-      <img src="../../img/png/4mob.png" alt="deal" />
+      <img class="ourImage" src="../../img/png/4mob.png" alt="deal" />
     </div>
   </div>
 </section>
@@ -109,11 +105,14 @@
 	<section class="sectionWithPadding">
   <div class="container">
     <div class="aboutUseContentWrapper">
-      <h2 class="sectionTitle">About us</h2>
+      <span class="borderBox">
+        <h2 class="sectionTitle borderedSpan">About us</h2>
+        <span class="border"></span>
+      </span>
       <ul class="aboutList">
         <li class="aboutListItem">
           <p class="itemTitle">Lorem ipsum dolor sit amet consectetur</p>
-          <p class="itemText">
+          <p class="itemText openSans">
             Lorem ipsum dolor sit amet consectetur. Vel duis nibh sodales in
             gravida dolor in. Elementum netus rhoncus sagittis nunc mi non
             egestas est. Aliquam maecenas in sed vestibulum neque feugiat
@@ -123,7 +122,7 @@
         </li>
         <li class="aboutListItem">
           <p class="itemTitle">Lorem ipsum dolor sit amet consectetur</p>
-          <p class="itemText">
+          <p class="itemText openSans">
             Lorem ipsum dolor sit amet consectetur. Vel duis nibh sodales in
             gravida dolor in. Elementum netus rhoncus sagittis nunc mi non
             egestas est. Aliquam maecenas in sed vestibulum neque feugiat
