@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  // background-color: var(--header-bcg-color);
 }
 
 .headerBox {
@@ -9,4 +8,81 @@
   justify-content: space-between;
 
   padding: 24px 0px;
+}
+
+.menuIcon {
+  display: block;
+  stroke: var(--purple-string-color);
+  transition: stroke var(--transition-duration) ease-in-out;
+
+  &:hover,
+  &:focus {
+    stroke: var(--light-string-color);
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.desktopMenu {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
+
+.menuListItem {
+  &:not(:last-of-type) {
+    margin-right: 46px;
+  }
+
+  &:hover .menuLink,
+  &:focus .menuLink {
+    color: var(--light-string-color);
+  }
+}
+
+.menuLink {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+
+  transition: color var(--transition-duration) ease-in-out;
+}
+
+.menuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--purple-string-color);
+  cursor: pointer;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  transition: background-color var(--transition-duration) ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-string-color);
+  }
 }

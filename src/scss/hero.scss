@@ -13,15 +13,34 @@
 .heroContentWrapper {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
 
 .heroImg {
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.heroImgDesktop {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    margin-right: 122px;
+  }
 }
 
 .heroTextWrapper {
   margin-top: 40px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
 }
 
 .sectionTitle.heroTitle {
@@ -30,6 +49,11 @@
 
   margin: 0px;
   padding: 0px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 44px;
+    line-height: 62px;
+  }
 }
 
 .heroText {
@@ -38,85 +62,33 @@
   font-weight: 400px;
   font-size: 16px;
   color: var(--text-color);
-}
-
-.stringBox {
-  position: relative;
-  display: flex;
-  width: 100%;
-  overflow-x: hidden;
-  pointer-events: none;
-  height: 135px;
-}
-
-.string {
-  display: flex;
-  align-items: center;
-
-  padding: 20px 0px;
-}
-
-.string.light {
-  position: relative;
-  height: max-content;
-  top: 32%;
-  left: -10px;
-
-  background-color: var(--light-string-color);
-  transform: rotate(10deg);
-}
-
-.stringTextlight {
-  white-space: nowrap;
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
-  font-family: "Exo", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-}
-
-.stringTextlight.desktop {
-  display: none;
 
   @media screen and (min-width: 1440px) {
-    display: block;
-  }
-}
+    margin-top: 28px;
 
-.string.purple {
-  position: absolute;
-  left: -10px;
-  top: 27%;
-  // top: -80px;
-  height: max-content;
-
-  background-color: var(--purple-string-color);
-  transform: rotate(-8deg);
-}
-
-.stringTextpurple {
-  white-space: nowrap;
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
-
-  font-family: "Exo", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-}
-
-.stringTextpurple.desktop {
-  display: none;
-
-  @media screen and (min-width: 1440px) {
-    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
 .specText {
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
+}
+
+.stringImage {
+  display: flex;
+  width: 100vw;
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.stringImageDesktop {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    width: 100vw;
+  }
 }

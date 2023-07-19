@@ -1,0 +1,69 @@
+.choosesContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.choosesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 44px 16px;
+  background-color: var(--purple-string-color);
+  border-radius: 10px;
+
+  color: white;
+}
+
+.sectionTitle.choosesTitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39px;
+  color: white;
+}
+
+.bigBoxText {
+  margin-top: 16px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.bigBoxBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  background-color: var(--light-string-color);
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  color: white;
+
+  cursor: pointer;
+  transition: background-color var(--transition-duration) ease-in-out,
+    color var(--transition-duration) ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: var(--purple-string-color);
+  }
+}

@@ -1,29 +1,73 @@
 <section class="sectionWithPadding">
   <div class="container">
     <div class="servicesContentWrapper">
-      <h2 class="sectionTitle">Services</h2>
-      <div class="bigBox">
-        <p class="bigBoxTitle">Lorem Ipsum</p>
-        <ul class="bigBoxList">
-          <li class="bigBoxListItem">Lorem</li>
-          <li class="bigBoxListItem">Lorem</li>
-          <li class="bigBoxListItem">Lorem</li>
-          <li class="bigBoxListItem">Lorem</li>
-        </ul>
+      <div class="servicesTextWrapper">
+        <span class="borderBox">
+          <h2 class="sectionTitle borderedSpan">Services</h2>
+          <span class="border"></span>
+        </span>
+        <div class="servicesBlocksWrapper">
+          <div class="bigBox">
+            <p class="bigBoxTitle exoFont">Lorem Ipsum</p>
+            <ul class="bigBoxList">
+              <li class="bigBoxListItem">
+                <p class="bigBoxItemText openSans">Lorem</p>
+              </li>
+              <li class="bigBoxListItem">
+                <p class="bigBoxItemText openSans">Lorem</p>
+              </li>
+              <li class="bigBoxListItem">
+                <p class="bigBoxItemText openSans">Lorem</p>
+              </li>
+              <li class="bigBoxListItem">
+                <p class="bigBoxItemText openSans">Lorem</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="servicesBottomList">
+            <li class="servicesBottomListItem">
+              <p class="bottomListItemTitle exoFont">Lorem</p>
+              <div class="bottomListItemList">
+                <p class="bottomListItemText openSans">Ipsum</p>
+                <p class="bottomListItemText openSans">Ipsum</p>
+              </div>
+            </li>
+            <li class="servicesBottomListItem">
+              <p class="bottomListItemTitle exoFont">Lorem</p>
+              <div class="bottomListItemList">
+                <p class="bottomListItemText openSans">Ipsum</p>
+                <p class="bottomListItemText openSans">Ipsum</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="aboutBottomList">
-        <li class="aboutBottomListItem">
-          <p class="bottomListItemTitle">Lorem</p>
-          <p class="bottomListItemText">Ipsum</p>
-          <p class="bottomListItemText">Ipsum</p>
-        </li>
-        <li class="aboutBottomListItem">
-          <p class="bottomListItemTitle">Lorem</p>
-          <p class="bottomListItemText">Ipsum</p>
-          <p class="bottomListItemText">Ipsum</p>
-        </li>
-      </ul>
-      <img src="../../img/png/5mob.png" alt="magnet" />
+      <picture>
+        <source
+          srcset="
+            ../../img/png/mobile/5mob.png   1x,
+            ../../img/png/mobile/5mob2x.png 2x
+          "
+        />
+        <img
+          class="servicesImage"
+          src=" ../../img/png/mobile/5mob.png"
+          alt="magnet"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ../../img/png/desktop/services.png   1x,
+            ../../img/png/desktop/services2x.png 2x
+          "
+        />
+        <img
+          class="servicesImageDesktop"
+          src="../../img/png/desktop/services.png"
+          alt="magnet"
+        />
+      </picture>
     </div>
   </div>
 </section>

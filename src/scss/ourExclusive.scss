@@ -8,6 +8,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.ourTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
 }
 
 .ourSectionTitle {
@@ -21,6 +34,11 @@
   width: 100%;
 
   margin-top: 40px;
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .ourListItem {
@@ -38,8 +56,35 @@
 
   background-color: var(--bg-our-listItem);
   border-radius: 10px;
+
+  @media screen and (min-width: 1440px) {
+    &:not(:first-of-type) {
+      margin-top: 24px;
+    }
+    &:first-of-type {
+      margin-left: calc((100% - 24px) / 4);
+      margin-right: calc((100% - 24px) / 4);
+    }
+    &:last-of-type {
+      margin-left: 24px;
+    }
+
+    width: (calc((100% - 24px) / 2));
+  }
 }
 
 .ourImage {
   margin-top: 40px;
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.ourImageDesktop {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    margin-left: 120px;
+  }
 }

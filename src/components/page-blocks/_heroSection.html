@@ -1,11 +1,33 @@
 <section class="heroSection">
   <div class="container">
     <div class="heroContentWrapper">
-      <img
-        class="heroImg"
-        src="../../img/png/heroMobile.png"
-        alt="heroMobile"
-      />
+      <picture>
+        <source
+          srcset="
+            ../../img/png/mobile/heroMobile.png   1x,
+            ../../img/png/mobile/heroMobile2x.png 2x
+          "
+        />
+        <img
+          class="heroImg"
+          src="../../img/png/desktop/hero1.png"
+          alt="heroMobile"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ../../img/png/desktop/hero1.png   1x,
+            ../../img/png/desktop/hero12x.png 2x
+          "
+        />
+        <img
+          class="heroImgDesktop"
+          src="../../img/png/desktop/hero1.png"
+          alt="heroMobile"
+        />
+      </picture>
+
       <div class="heroTextWrapper">
         <h1 class="heroTitle exoFont sectionTitle">
           Lorem ipsum dolor sit amet consectetur. Mi Cras
@@ -23,24 +45,30 @@
       </div>
     </div>
   </div>
-  <div class="stringBox">
-    <div class="string light">
-      <p class="stringTextlight">WE BUY TRAFFIC</p>
-      <p class="stringTextlight specText">WE BUY TRAFFIC</p>
-      <p class="stringTextlight">WE BUY TRAFFIC</p>
-      <p class="stringTextlight specText desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextlight desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextlight specText desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextlight desktop">WE BUY TRAFFIC</p>
-    </div>
-    <div class="string purple">
-      <p class="stringTextpurple">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple specText">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple specText desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple specText desktop">WE BUY TRAFFIC</p>
-      <p class="stringTextpurple desktop">WE BUY TRAFFIC</p>
-    </div>
-  </div>
+  <picture>
+    <source
+      srcset="
+        ../../img/png/mobile/1xMobile.png 1x,
+        ../../img/png/mobile/2xMobile.png 2x
+      "
+    />
+    <img
+      src="../../img/png/mobile/1xMobile.png "
+      class="stringImage"
+      alt="imageHero"
+    />
+  </picture>
+  <picture>
+    <source
+      srcset="
+        ../../img/png/desktop/heroString.png   1x,
+        ../../img/png/desktop/heroString2x.png 2x
+      "
+    />
+    <img
+      src="../../img/png/1xMobile.png "
+      class="stringImageDesktop"
+      alt="imageHero"
+    />
+  </picture>
 </section>
