@@ -79,3 +79,15 @@ jobs:
           step: insights
           api_token: ${{ secrets.CODESEE_ARCH_DIAG_API_TOKEN }}
           github_ref: ${{ github.ref }}
+          
+ deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.2
+      with:
+        branch: gh-pages
+        folder: build
