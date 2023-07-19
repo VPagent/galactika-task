@@ -21,4 +21,8 @@
   height: 12px;
   background-color: var(--light-string-color);
   border-radius: 5px;
+
+  @media screen and (min-width: 1440px) {
+    bottom: 7px;
+  }
 }

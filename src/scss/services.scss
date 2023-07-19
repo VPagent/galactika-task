@@ -16,6 +16,7 @@
   @media screen and (min-width: 1440px) {
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
   }
 }
 
@@ -50,6 +51,7 @@
   @media screen and (min-width: 1440px) {
     height: 100%;
     margin-top: 0px;
+    padding: 24px 0px;
   }
 }
 
@@ -57,10 +59,19 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+  }
 }
 
 .bigBoxList {
   margin-top: 24px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
+  }
 }
 
 .bigBoxListItem {
@@ -76,6 +87,11 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .servicesBottomList {
@@ -84,9 +100,12 @@
   width: 100%;
 
   margin-top: 20px;
+
   @media screen and (min-width: 1440px) {
     flex-direction: column;
     align-items: center;
+
+    height: 100%;
 
     margin-left: 24px;
     margin-top: 0px;
@@ -111,8 +130,6 @@
     width: -webkit-fill-available;
     padding-left: 24px;
     padding-right: 24px;
-    height: calc((100% -24px) / 2);
-    // flex-grow: 1;
 
     &:last-child {
       margin-left: 0px;
@@ -125,14 +142,18 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
-  letter-spacing: 0em;
   text-align: center;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .bottomListItemList {
   @media screen and (min-width: 1440px) {
     display: flex;
-    // justify-content: space-between;
+    margin-top: 24px;
   }
 }
 
@@ -143,8 +164,12 @@
   line-height: 20px;
 
   @media screen and (min-width: 1440px) {
+    margin-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
+
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
